@@ -1,0 +1,426 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Zorgt ervoor dat de body altijd de volledige hoogte van het scherm heeft */
+    font-family: Arial, Helvetica, sans-serif; /* Stelt het lettertype in */
+}
+
+.navigatie {
+    background-color: rgb(45, 43, 43); /* Donkere achtergrondkleur voor navigatiebalk */
+}
+
+.navigatie ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+/* Specifieke stijl voor het home-icoon in de navigatie */
+.navigatie .home {
+    position: absolute;
+    left: 10px;
+    top: 1px;
+    bottom: 5px;
+}
+
+.navigatie .home img {
+    max-width: 40px; /* Beperkt de breedte van het home-icoon */
+}
+
+/* Stijl voor de navigatie-items */
+.navigatie li {
+    background-color: rgb(45, 43, 43); /* Donkere achtergrondkleur voor navigatie-items */
+}
+
+li:hover {
+    background-color: black; /* Verandert de kleur wanneer de gebruiker met de muis over een item zweeft */
+}
+
+.navigatie a {
+    color: #e74c3c; /* Roodkleurige tekst voor de navigatie-links */
+    text-decoration: none; /* Verwijdert de onderstreping van de links */
+    padding: 1rem;
+    display: block;
+}
+
+a:hover {
+    color: white; /* Verandert de kleur naar wit bij hover */
+}
+
+/* Footer instellingen */
+footer {
+    background-color: #1e1e1e; /* Donkere achtergrond voor de footer */
+    color: white; /* Witte tekst in de footer */
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto; /* Zorgt ervoor dat de footer altijd onderaan staat */
+}
+
+/* Intro sectie stijl */
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #333; /* Donkere achtergrondkleur voor de intro sectie */
+}
+
+.intro h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #e74c3c; /* Roodkleurige tekst voor de titel */
+}
+
+.intro p {
+    font-size: 18px;
+    color: #000000; /* Zwarte tekst voor de intro paragraaf */
+}
+
+/* Film grid instellingen */
+.film-grid {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    flex: 1;
+}
+
+/* Stijl voor film-items in het grid */
+.film-item {
+    border: 2px solid #444; /* Donkere rand om de film items */
+    border-radius: 8px; /* Ronde hoeken */
+    background-color: #222; /* Donkere achtergrond voor film-items */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 200px; /* Specificeert de breedte van de film items */
+    text-align: center;
+}
+
+.film-item img {
+    width: 100%; /* Maakt de afbeelding breed zoals de container */
+    border-radius: 8px; /* Ronde hoeken voor de afbeelding */
+}
+
+.film-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #f1f1f1; /* Witte tekst voor de titels van de films */
+}
+
+/* Stijl voor de 'details' knop */
+.details-btn {
+    padding: 10px 20px;
+    background-color: #f39c12; /* Oranje kleur voor de knop */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover-effect voor de 'details' knop */
+.details-btn:hover {
+    background-color: #e67e22; /* Donker oranje kleur bij hover */
+    transform: scale(1.1); /* Maakt de knop iets groter bij hover */
+}
+
+/* Specifieke stijl voor de film detail sectie */
+.film-detail {
+    padding: 40px 20px;
+}
+
+/* Stijl voor de film header (filmnaam en afbeelding) */
+.film-header {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+/* Stijl voor de afbeelding van de film */
+.film-image {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    margin-right: 30px;
+    border-radius: 8px;
+}
+
+/* Stijl voor de film titel */
+.film-info h1 {
+    font-size: 36px;
+    color: #e74c3c; /* Roodkleurige titel */
+}
+
+.film-info p {
+    font-size: 18px;
+    color: #000000; /* Zwarte tekst voor filminformatie */
+}
+
+/* Stijlen voor de verschillende secties in de film detailpagina */
+.film-plot, .film-actors, .film-reviews, .related-films {
+    margin-bottom: 30px;
+}
+
+/* Titels voor de verschillende secties */
+.film-plot h2, .film-actors h2, .film-reviews h2, .related-films h2 {
+    font-size: 28px;
+    color: #000000;
+}
+
+/* Stijl voor de lijst met acteurs */
+.film-actors ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.film-actors li {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* Stijlen voor de gerelateerde films sectie */
+.related-films {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.related-films .film-item {
+    width: 30%;
+    text-align: center;
+}
+
+.related-films .film-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.related-films .film-item h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Stijl voor de admin dashboard pagina */
+.admin-dashboard {
+    padding: 40px 20px;
+}
+
+.admin-dashboard h1, .admin-dashboard h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Tabel instellingen voor de admin dashboard */
+.film-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+/* Stijlen voor de cellen in de film tabel */
+.film-table th, .film-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Stijl voor de tabelkoppen */
+.film-table th {
+    background-color: #f39c12;
+    color: white;
+}
+
+/* Stijl voor de knop om een film toe te voegen in de admin dashboard */
+.add-film-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover-effect voor de 'film toevoegen' knop */
+.add-film-btn:hover {
+    background-color: #e67e22;
+}
+
+/* Formulier voor het zoeken van films */
+.search-film-form {
+    margin-bottom: 20px;
+}
+
+.search-film-form label {
+    font-size: 16px;
+    color: #333;
+}
+
+.search-film-form input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-film-form button {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-film-form button:hover {
+    background-color: #e67e22;
+}
+
+/* Stijl voor de 'meer bekijken' knop */
+.meer-bekijken-btn {
+    position: center;
+    padding: 15px 30px;
+    background-color: #f39c12; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+/* Hover-effect voor de 'meer bekijken' knop */
+.meer-bekijken-btn:hover {
+    background-color: #e67e22; 
+}
+
+/* Media Queries voor mobiele apparaten */
+@media screen and (max-width: 828px) {
+    body {
+        font-size: 14px; 
+        flex-direction: column; /* Flex richting wordt verticaal op kleine schermen */
+    }
+    
+    .navigatie ul {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navigatie .home { 
+        margin-bottom: 10px;
+    }
+
+    .navigatie a {
+        padding: 1rem;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .intro {
+        padding: 20px;
+    }
+
+    .intro h1 {
+        font-size: 28px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+
+    .film-grid {
+        flex-wrap: wrap; 
+        gap: 10px;
+    }
+
+    .film-item {
+        width: 100%; /* Films vullen de breedte */
+        margin: 0 auto 10px;
+    }
+
+    .film-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .meer-bekijken-btn {
+        width: 100%; /* Knop vult schermbreedte */
+        text-align: center;
+    }
+    
+    footer {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
+
+
+.film-detail-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(145deg, #222, #333); /* Donkere bioscoopachtige gradient */
+    border: 2px solid #e74c3c; /* Rood frame */
+    border-radius: 10px; /* Afgeronde hoeken */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Schaduw voor diepte */
+    color: #f1f1f1; /* Tekst in lichtgrijs */
+    text-align: center; /* Centrale uitlijning */
+    font-family: 'Arial', sans-serif; /* Bioscoopachtige lettertypen */
+}
+
+.film-detail-container h1 {
+    font-size: 36px;
+    color: #f39c12; /* Gouden kleur voor de titel */
+    margin-bottom: 10px;
+}
+
+.film-detail-container p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #f1f1f1; /* Lichte tekst */
+}
+
+.film-plot, .film-actors {
+    margin-top: 20px; /* Ruimte tussen secties */
+    text-align: left; /* Links uitgelijnd voor een natuurlijke leesstijl */
+}
+
+.film-plot h2, .film-actors h2 {
+    font-size: 24px;
+    color: #f39c12; /* Goudkleurige subtitels */
+    margin-bottom: 10px;
+}
+
+.film-plot p, .film-actors ul {
+    font-size: 16px;
+    color: #f1f1f1; /* Lichte tekst */
+    line-height: 1.6; /* Betere leesbaarheid */
+}
+
+.film-actors li {
+    margin-bottom: 5px;
+    padding-left: 10px;
+    position: relative;
+}
+
+
+.film-actors li:hover {
+    background-color: transparent; /* Geen zwarte achtergrond meer bij hover */
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Admin Dashboard</title> 
+    <link rel="stylesheet" href="../css/maincss.css">
+    <link rel="stylesheet" href="../css/admin-dashboard.css">
+</head>
+<body>
+    
+    <nav class="navigatie">
+        <ul>
+            <a class="home" href="Main.html"><img src="../img/video-camera.png"></a> 
+            <li><a href="Main.html" class="active">Home</a></li>
+            <li><a href="AdminLogin.html">Admin Login</a></li> 
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Over ons</a></li>
+        </ul>
+    </nav>
+
+    <!-- Admin Dashboard Sectie -->
+    <section class="admin-dashboard">
+        <h1>Welkom, Admin</h1>
+
+        <!-- Film Zoeken Sectie -->
+        <h2>Film Zoeken</h2>
+<form class="search-film-form"> <!-- Zoekformulier -->
+    <label for="search">Zoek naar een film:</label>
+    <input type="text" id="search" name="search" placeholder="Titel, Genre of Jaar...">
+    <button type="submit">Zoeken</button>
+</form>
+
+        <!-- Overzicht van Films -->
+        <h2>Overzicht van Films</h2>
+        <table class="film-table"> 
+            <thead> <!-- Tabelkop -->
+                <tr>
+                    <th>Titel</th> 
+                    <th>Genre</th> 
+                    <th>Jaar</th>
+                </tr>
+            </thead>
+            <tbody> 
+                <tr>
+                    <td>Film 1</td> 
+                    <td>Actie</td>
+                    <td>2025</td>
+                </tr>
+                <tr>
+                    <td>Film 2</td>
+                    <td>Avontuur</td>
+                    <td>2024</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Film Toevoegen</h2>
+        <button class="add-film-btn">Film Toevoegen</button> 
+    </section>
+
+
+    <footer>
+        <p>Project Static Web</p> 
+    </footer>
+
+</body>
+</html>
