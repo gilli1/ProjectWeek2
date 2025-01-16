@@ -3,30 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Film Website - Homepage</title>
-    <link rel="stylesheet" href="maincss.css">
+    <title>Project Static Web</title>
+    <link rel="stylesheet" href="maincss.css"> <!-- Link naar de externe CSS-file -->
 </head>
 <body>
 
-    <nav class="navbar">
-        <a href="Main.html" class="active">Home</a>
-        <a href="Movies.html">Films</a>
-        <a href="AdminLogin.html">Admin Login</a>
-        <a href="Contact.html">Contact</a>
+    <!-- Navigatiebalk bovenaan de pagina -->
+    <nav class="navigatie">
+        <ul>
+            <!-- Logo of Home knop -->
+            <a class="home" href="Main.html"><img src="video-camera.png" alt="Home"></a>
+            <!-- Navigatielinks -->
+            <li><a href="Main.html" class="active">Home</a></li>
+            <li><a href="AdminLogin.html">Admin Login</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Over ons</a></li>
+        </ul>
     </nav>
 
-
+    <!-- Introductiesectie met welkomsttekst -->
     <section class="intro">
         <h1>Welkom op de Filmwebsite van Gillian Gerits</h1>
         <p>Ontdek de nieuwste films en meer. Vind hier de film die je zoekt!</p>
     </section>
 
-
+    <!-- Sectie voor de filmgrid -->
     <section class="film-grid">
+        <!-- Individuele filmitems -->
         <div class="film-item">
-            <img src="e3d79fdb-8fe3-41f0-9335-91afbddbd52f.png" alt="Film 1">
-            <h3>Film Titel 1</h3>
-            <a href="Movies.html"><button class="details-btn">Details</button></a>
+            <img src="e3d79fdb-8fe3-41f0-9335-91afbddbd52f.png" alt="Film 1"> <!-- Afbeelding van de film -->
+            <h3>Film Titel 1</h3> <!-- Titel van de film -->
+            <a href="Movies.html"><button class="details-btn">Details</button></a> <!-- Details knop -->
         </div>
         <div class="film-item">
             <img src="e3d79fdb-8fe3-41f0-9335-91afbddbd52f.png" alt="Film 2">
@@ -43,6 +50,10 @@
             <h3>Film Titel 4</h3>
             <a href="Movies.html"><button class="details-btn">Details</button></a>
         </div>
+    </section>
+
+    <!-- Tweede filmgrid met meer films -->
+    <section class="film-grid">
         <div class="film-item">
             <img src="e3d79fdb-8fe3-41f0-9335-91afbddbd52f.png" alt="Film 5">
             <h3>Film Titel 5</h3>
@@ -64,10 +75,15 @@
             <a href="Movies.html"><button class="details-btn">Details</button></a>
         </div>
     </section>
-    
+
+    <!-- Knop om meer films te bekijken -->
+    <section class="meer-bekijken">
+        <a href="#"><button class="meer-bekijken-btn">Meer Bekijken</button></a>
+    </section>
+
 
     <footer>
-        <p>&copy; 2025 Filmwebsite</p>
+        <p>Static Web Project</p>
     </footer>
 
 </body>
