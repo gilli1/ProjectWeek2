@@ -3,18 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Static Web</title>
-    <link rel="stylesheet" href="maincss.css">
+    <title>Film Detail - Film Titel</title>
+    <link rel="stylesheet" href="maincss.css"> <!-- Link naar de externe CSS-file -->
 </head>
 <body>
-    
-    <nav class="navbar">
-        <a href="Main.html" >Home</a>
-        <a href="Movies.html" class="active">Films</a>
-        <a href="AdminLogin.html">Admin Login</a>
-        <a href="Contact.html">Contact</a>
+
+    <!-- Navigatiebalk -->
+    <nav class="navigatie">
+        <ul>
+            <!-- Logo of Home knop -->
+            <a class="home" href="Main.html"><img src="video-camera.png" alt="Home"></a>
+            <!-- Navigatielinks -->
+            <li><a href="Main.html" class="active">Home</a></li>
+            <li><a href="AdminLogin.html">Admin Login</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Over ons</a></li>
+        </ul>
     </nav>
 
+    <!-- Sectie voor film details -->
+    <section class="film-detail">
+        <!-- Film header met informatie zoals titel, genre -->
+        <div class="film-header">
+            <div class="film-info">
+                <h1>Film Titel</h1>
+                <p><strong>Genre:</strong> Actie, Avontuur</p> <!-- Genre van de film -->
+                <p><strong>Release Jaar:</strong> 2025</p> <!-- Jaar van uitgave -->
+                <p><strong>Regisseur:</strong> Regisseur Naam</p> <!-- Naam van de regisseur -->
+            </div>
+        </div>
+
+        <!-- Plot sectie van de film -->
+        <div class="film-plot">
+            <h2>Plot</h2>
+            <p>Dit is het plot van de film. Het vertelt het verhaal van de hoofdpersoon die op een avontuurlijke reis gaat om de wereld te redden...</p>
+        </div>
+
+        <!-- Sectie met acteurs van de film -->
+        <div class="film-actors">
+            <h2>Acteurs</h2>
+            <ul>
+                <!-- Acteurs opgesomd -->
+                <div>Summa - Hoofdrolspeler</div>
+                <div>Tim - Bijrolspeler</div>
+                <div>Tyvian - Bijrolspeler</div>
+            </ul>
+        </div>
+
+        <!-- Gerelateerde films sectie -->
+        <div class="related-films">
+            <h2>Gerelateerde Films</h2>
+            <!-- Individuele gerelateerde films -->
+            <div class="film-item">
+                <img src="e3d79fdb-8fe3-41f0-9335-91afbddbd52f.png" alt="Gerelateerde Film 1"> <!-- Afbeelding -->
+                <h3>Film Titel 1</h3> <!-- Titel van de film -->
+            </div>
+            <div class="film-item">
+                <img src="e3d79fdb-8fe3-41f0-9335-91afbddbd52f.png" alt="Gerelateerde Film 2">
+                <h3>Film Titel 2</h3>
+            </div>
+            <div class="film-item">
+                <img src="e3d79fdb-8fe3-41f0-9335-91afbddbd52f.png" alt="Gerelateerde Film 3">
+                <h3>Film Titel 3</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Filmwebsite</p>
+    </footer>
 
 </body>
 </html>
